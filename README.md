@@ -1,4 +1,4 @@
- 🧠 AI-Based Notes Summarizer & Cloud Share 📄☁️
+# 🧠 AI-Based Notes Summarizer & Cloud Share 📄☁️
  This project uses AWS Serverless Architecture to allow users to upload notes (PDF/TXT), summarize them using Meta LLaMA 3 via Amazon Bedrock, and optionally send the results via SNS email. 
 
  
@@ -46,13 +46,13 @@ The project is entirely deployed on AWS, leveraging a robust set of services to 
 |   AWS CloudFront            | Speeds up global access to the website.                    |
 -------------------------------------------------------------------------------------------
 
-Deployment Guide
-This section provides a step-by-step guide to deploying the project from scratch using AWS services.
+# Deployment Guide
+  This section provides a step-by-step guide to deploying the project from scratch using AWS services.
 
-Prerequisites
-An active AWS account.
+# Prerequisites
+  An active AWS account.
 
-Basic familiarity with AWS services.
+# Basic familiarity with AWS services.
 
 1. Configure Amazon S3
 Create an S3 bucket (e.g., rddi.xyz). The bucket name should match your custom domain name.

@@ -155,7 +155,8 @@ Attach this role to both of your Lambda functions later.
 
 Note: Remember to update the API_ENDPOINT variable in both frontend HTML files to the base URL of your deployed API Gateway.
 
+# 📦 Architecture Diagram
 
-
+![CUSTOM-DOMAIN](https://github.com/user-attachments/assets/faefa119-4e6e-4cd9-a326-2bb3fd4b6ac1)
 
 

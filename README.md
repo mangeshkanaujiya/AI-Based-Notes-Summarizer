@@ -155,8 +155,19 @@ Attach this role to both of your Lambda functions later.
 
 Note: Remember to update the API_ENDPOINT variable in both frontend HTML files to the base URL of your deployed API Gateway.
 
-# 📦 Architecture Diagram
+# 📁 Project Structure
+📦ai-notes-summarizer ┣ 📁frontend ┃ ┣ upload.html ┃ ┣ view-summary.html ┃ ┗ ... ┣ 📁lambda ┃ ┣ upload-handler.zip ┃ ┣ summary-handler.zip ┣ 📁docs ┃ ┗ AINotesManual.pdf ┣ cloudformation.yaml ┗ README.md
+
+
+# 📦 Architecture Diagram :
 
 ![CUSTOM-DOMAIN](https://github.com/user-attachments/assets/faefa119-4e6e-4cd9-a326-2bb3fd4b6ac1)
+
+
+# 🖼️ Screenshots : 
+
+Home Page :
+<img width="1917" height="1022" alt="home" src="https://github.com/user-attachments/assets/9e538df1-f0d9-4b7c-ac32-559b68e13c71" />
+
 
 

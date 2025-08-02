@@ -13,10 +13,10 @@ The application is built on a serverless architecture using various AWS services
  Users can upload .txt or .pdf files.
 
 2. AI-Powered Summarization: 
-Utilizes Amazon Bedrock with a foundation model (e.g., Meta LLaMA 3) to generate concise summaries.
+ * Utilizes Amazon Bedrock with a foundation model (e.g., Meta LLaMA 3) to generate concise summaries.
 
 3. Cloud Storage:
-Summaries are stored securely in an Amazon DynamoDB table.
+ * Summaries are stored securely in an Amazon DynamoDB table.
 
 4. Unique Access Links:
 Each summary is associated with a unique ID, allowing for easy sharing and retrieval.

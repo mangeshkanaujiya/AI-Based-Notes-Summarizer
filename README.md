@@ -13,22 +13,22 @@ The application is built on a serverless architecture using various AWS services
  Users can upload .txt or .pdf files.
 
 2. AI-Powered Summarization: 
- * Utilizes Amazon Bedrock with a foundation model (e.g., Meta LLaMA 3) to generate concise summaries.
+    Utilizes Amazon Bedrock with a foundation model (e.g., Meta LLaMA 3) to generate concise summaries.
 
 3. Cloud Storage:
- * Summaries are stored securely in an Amazon DynamoDB table.
+    Summaries are stored securely in an Amazon DynamoDB table.
 
 4. Unique Access Links:
-Each summary is associated with a unique ID, allowing for easy sharing and retrieval.
+    Each summary is associated with a unique ID, allowing for easy sharing and retrieval.
 
 5. Email Notifications:
-Users receive email alerts via Amazon SNS when their summary has been processed and is ready to view.
+    Users receive email alerts via Amazon SNS when their summary has been processed and is ready to view.
 
 6. Static Website Hosting:
-The frontend is hosted on Amazon S3 with static website hosting enabled.
+    The frontend is hosted on Amazon S3 with static website hosting enabled.
 
 7. Technology Stack
-The project is entirely deployed on AWS, leveraging a robust set of services to handle the backend logic, data storage, and frontend delivery.
+    The project is entirely deployed on AWS, leveraging a robust set of services to handle the backend logic, data storage, and frontend delivery.
 
 --------------------------------------------------------------------------------------------
 |       Service               |               Purpose                                      |
@@ -55,41 +55,41 @@ The project is entirely deployed on AWS, leveraging a robust set of services to 
 # Basic familiarity with AWS services.
 
 1. Configure Amazon S3
-Create an S3 bucket (e.g., rddi.xyz). The bucket name should match your custom domain name.
-
-Enable Static website hosting for the bucket.
-
-Upload the upload.html and view-summary.html files to the bucket.
+   Create an S3 bucket (e.g., rddi.xyz). The bucket name should match your custom domain name.
+   
+   Enable Static website hosting for the bucket.
+   
+   Upload the upload.html and view-summary.html files to the bucket.
 
 2. Configure AWS IAM
-Create an IAM role for Lambda with the following managed policies attached:
+   Create an IAM role for Lambda with the following managed policies attached:
 
-AmazonS3FullAccess
+   1.AmazonS3FullAccess
 
-AmazonDynamoDBFullAccess
+   2.AmazonDynamoDBFullAccess
 
-AmazonSNSFullAccess
+   3.AmazonSNSFullAccess
 
-AmazonComprehendFullAccess (if not available, create a custom policy)
+   4.AmazonComprehendFullAccess (if not available, create a custom policy)
 
-CloudWatchFullAccess
+   5.CloudWatchFullAccess
 
-Name the role ai-notes-lambda-role.
-
+# Name the role ai-notes-lambda-role.
+  
 Attach this role to both of your Lambda functions later.
 
 3. Create AWS Lambda Functions
-You will need to create two Lambda functions.
+   You will need to create two Lambda functions.
 
-upload-handler: Handles the incoming text/PDF files, sends the content for summarization, and stores the initial data in DynamoDB.
+   upload-handler: Handles the incoming text/PDF files, sends the content for summarization, and stores the initial data in DynamoDB.
+   
+   summary-handler: Retrieves the summary from DynamoDB based on the provided noteId.
 
-summary-handler: Retrieves the summary from DynamoDB based on the provided noteId.
+   Create the two Lambda functions.
 
-Create the two Lambda functions.
+   Copy and paste the provided Python code for each function into the respective Lambda console.
 
-Copy and paste the provided Python code for each function into the respective Lambda console.
-
-Upload the code as a .zip file if you are using a local IDE.
+   Upload the code as a .zip file if you are using a local IDE.
 
 4. Configure Amazon DynamoDB
 Create a new DynamoDB table named note_summaries.

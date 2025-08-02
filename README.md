@@ -196,3 +196,18 @@ This project is developed by a group of passionate developers as part of a cloud
 | Mangesh Kanaujiya | Frontend Developer      | [mangeshkanaujiya2004@gmail.com](mailto:mangeshkanaujiya2004@gmail.com) |
 | Prince Jaiswal    | Backend Developer       | [princejaiswal@gmail.com](mailto:princejaiswal@gmail.com)               |
 
+
+# Contact me :
+
+Mangesh Kanaujiya :
+
+ LinkedIn  :  https://www.linkedin.com/in/mangesh-kanaujiya-0438bb2a5/
+ 
+ GitHub : https://github.com/mangeshkanaujiya
+
+ Raju Dhuriya : 
+
+ LinkedIn  : https://www.linkedin.com/in/raju-dhuriya-202b372b6/
+
+ GitHub  :  https://github.com/rajudhuriya90
+

@@ -167,7 +167,22 @@ Note: Remember to update the API_ENDPOINT variable in both frontend HTML files t
 # 🖼️ Screenshots : 
 
 Home Page :
+
 <img width="1917" height="1022" alt="home" src="https://github.com/user-attachments/assets/9e538df1-f0d9-4b7c-ac32-559b68e13c71" />
+
+ upload-notes :
+ 
+<img width="1919" height="953" alt="upload" src="https://github.com/user-attachments/assets/53b82daa-24e5-4959-9862-c0a3b61e1341" />
+
+📤 generate_unique_id :
+
+<img width="1919" height="891" alt="idgenerate" src="https://github.com/user-attachments/assets/6d5e2117-6180-47e3-ae8b-91b0421d7c96" />
+
+view_summary_page : 
+
+![Uploading getsummary.png…]()
+
+
 
 
 

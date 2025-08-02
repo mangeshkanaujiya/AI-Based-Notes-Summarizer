@@ -187,6 +187,12 @@ view_summary_page :
  <img width="1919" height="961" alt="viewsummary" src="https://github.com/user-attachments/assets/9d25d709-21a1-4508-b264-eaf64d96dc00" />
 
 
+# 👥 Project Team
+This project is developed by a group of passionate developers as part of a cloud-based AI app initiative.
 
-
+| **Name**          | **Role**                | **Email**                                                               |
+| ----------------- | ----------------------- | ----------------------------------------------------------------------- |
+| Raju Dhuriya      | DevOps & Cloud Engineer | [raju24devops@gmail.com](mailto:raju24devops@gmail.com)                 |
+| Mangesh Kanaujiya | Frontend Developer      | [mangeshkanaujiya2004@gmail.com](mailto:mangeshkanaujiya2004@gmail.com) |
+| Prince Jaiswal    | Backend Developer       | [princejaiswal@gmail.com](mailto:princejaiswal@gmail.com)               |
 

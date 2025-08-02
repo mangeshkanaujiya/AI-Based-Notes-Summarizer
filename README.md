@@ -166,11 +166,11 @@ Note: Remember to update the API_ENDPOINT variable in both frontend HTML files t
 
 # 🖼️ Screenshots : 
 
-Home Page :
+📤 Upload Page :
 
 <img width="1917" height="1022" alt="home" src="https://github.com/user-attachments/assets/9e538df1-f0d9-4b7c-ac32-559b68e13c71" />
 
- upload-notes :
+📤 upload-notes :
  
 <img width="1919" height="953" alt="upload" src="https://github.com/user-attachments/assets/53b82daa-24e5-4959-9862-c0a3b61e1341" />
 
@@ -180,7 +180,11 @@ Home Page :
 
 view_summary_page : 
 
-![Uploading getsummary.png…]()
+ <img width="1913" height="1013" alt="getsummary" src="https://github.com/user-attachments/assets/76d687a0-f14b-4ef4-a74b-635c68b4fd0f" />
+
+ 📋 Summary Page : 
+
+ <img width="1919" height="961" alt="viewsummary" src="https://github.com/user-attachments/assets/9d25d709-21a1-4508-b264-eaf64d96dc00" />
 
 
 

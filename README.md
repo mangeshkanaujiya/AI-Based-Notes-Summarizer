@@ -74,7 +74,7 @@ The application is built on a serverless architecture using various AWS services
 
    5.CloudWatchFullAccess
 
-# Name the role ai-notes-lambda-role.
+   Name the role ai-notes-lambda-role.
   
 Attach this role to both of your Lambda functions later.
 
@@ -92,66 +92,66 @@ Attach this role to both of your Lambda functions later.
    Upload the code as a .zip file if you are using a local IDE.
 
 4. Configure Amazon DynamoDB
-Create a new DynamoDB table named note_summaries.
+   Create a new DynamoDB table named note_summaries.
 
-Set the primary key to note_id.
+   Set the primary key to note_id.
 
 5. Configure Amazon SNS
-Create a new SNS topic named NoteSummaryNotification (Standard type).
+   Create a new SNS topic named NoteSummaryNotification (Standard type).
 
-Create a subscription for this topic with the protocol set to Email and your verified email address as the endpoint.
+   Create a subscription for this topic with the protocol set to Email and your verified email address as the endpoint.
 
-Confirm the subscription via the link sent to your email.
+   Confirm the subscription via the link sent to your email.
 
 6. Configure API Gateway
-Create a new HTTP API.
+   Create a new HTTP API.
 
-Define the routes and integrations:
+   Define the routes and integrations:
 
-POST /upload → Integrate with the upload-handler Lambda function.
+   POST /upload → Integrate with the upload-handler Lambda function.
 
-GET /get-summary → Integrate with the summary-handler Lambda function.
+   GET /get-summary → Integrate with the summary-handler Lambda function.
 
-Enable CORS for your API:
+   Enable CORS for your API:
 
-Set Allow origins to * or your domain.
+   Set Allow origins to * or your domain.
 
-Set Allow methods to GET, POST, OPTIONS.
+   Set Allow methods to GET, POST, OPTIONS.
 
-Set Allow headers to Content-Type.
+   Set Allow headers to Content-Type.
 
-Deploy the API to a new stage (e.g., prod). Note the base URL provided.
+   Deploy the API to a new stage (e.g., prod). Note the base URL provided.
 
 7. Update Environment Variables
-Go to the Configuration > Environment variables section for each of your Lambda functions and add the following keys and values:
+   Go to the Configuration > Environment variables section for each of your Lambda functions and add the following keys and values:
 
-For upload-handler:
+   For upload-handler:
 
-TABLE_NAME: note_summaries
+   TABLE_NAME: note_summaries
 
-SNS_TOPIC_ARN: The ARN of your NoteSummaryNotification SNS topic.
+   SNS_TOPIC_ARN: The ARN of your NoteSummaryNotification SNS topic.
 
-For summary-handler:
+   For summary-handler:
 
-TABLE_NAME: note_summaries
+   TABLE_NAME: note_summaries
 
 8. Set Up Domain and SSL (Optional but Recommended)
-ACM: Request a public SSL certificate for your custom domain (e.g., raju.rddi.xyz).
+   ACM: Request a public SSL certificate for your custom domain (e.g., raju.rddi.xyz).
 
-Route 53: Create a hosted zone for your domain.
+   Route 53: Create a hosted zone for your domain.
 
-CloudFront: Create a CloudFront distribution pointing to your S3 bucket, using the SSL certificate from ACM to enable HTTPS.
+   CloudFront: Create a CloudFront distribution pointing to your S3 bucket, using the SSL certificate from ACM to enable HTTPS.
 
-Update your Route 53 A-record to point to the CloudFront distribution's domain name.
+   Update your Route 53 A-record to point to the CloudFront distribution's domain name.
 
 9. Frontend Code
-The project includes two frontend HTML files: upload.html and view-summary.html. These files handle the user interface, file reading, and API calls.
+   The project includes two frontend HTML files: upload.html and view-summary.html. These files handle the user interface, file reading, and API calls.
 
-upload.html
-This page allows users to select and upload a .txt or .pdf file. It reads the file content, sends it to the /upload API endpoint, and displays the generated noteId.
+   upload.html
+   This page allows users to select and upload a .txt or .pdf file. It reads the file content, sends it to the /upload API endpoint, and displays the generated noteId.
 
-view-summary.html
-This page takes a noteId as a query parameter, fetches the summary from the /get-summary API endpoint, and displays the result.
+   view-summary.html
+   This page takes a noteId as a query parameter, fetches the summary from the /get-summary API endpoint, and displays the result.
 
 Note: Remember to update the API_ENDPOINT variable in both frontend HTML files to the base URL of your deployed API Gateway.
 
